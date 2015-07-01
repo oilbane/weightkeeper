@@ -5,9 +5,10 @@
  */
 package weight_keeper;
 
-/**
- *
+/** 
+ * 
  * @author jim
+ * ok ok
  */
 import javax.swing.JList;
 import javax.swing.DefaultListModel;
