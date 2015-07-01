@@ -27,18 +27,30 @@ public class mainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        userLogPanel = new javax.swing.JPanel();
+        chartLogPanel = new javax.swing.JPanel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.Y_AXIS));
+
+        userLogPanel.setLayout(new javax.swing.BoxLayout(userLogPanel, javax.swing.BoxLayout.Y_AXIS));
+        jTabbedPane1.addTab("user log", userLogPanel);
+
+        javax.swing.GroupLayout chartLogPanelLayout = new javax.swing.GroupLayout(chartLogPanel);
+        chartLogPanel.setLayout(chartLogPanelLayout);
+        chartLogPanelLayout.setHorizontalGroup(
+            chartLogPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 556, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        chartLogPanelLayout.setVerticalGroup(
+            chartLogPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 490, Short.MAX_VALUE)
         );
+
+        jTabbedPane1.addTab("chart", chartLogPanel);
+
+        getContentPane().add(jTabbedPane1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +91,8 @@ public class mainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel chartLogPanel;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JPanel userLogPanel;
     // End of variables declaration//GEN-END:variables
 }
